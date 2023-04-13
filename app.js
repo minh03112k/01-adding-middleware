@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(shopRouter);
 
-app.use(adminRouter);
+app.use('/admin', adminRouter);
 
 app.use(errorRouter);
 
